@@ -406,3 +406,267 @@ int main()
 
 
 //Kth POSITIVE INTEGER
+
+
+//recursion
+
+// #include<iostream>
+// using namespace std;
+
+// void fun3(int n)
+// {
+//     cout<<n<<" days left for birthday"<<endl;
+// }
+// void fun2(int n)
+// {
+//     cout<<n<<" days left for birthday"<<endl;
+// }
+// void fun1(int n)
+// {
+//     cout<<n<<" days left for birthday"<<endl;
+// }
+// void fun0(int n)
+// {
+//     cout<<n<<" happy birthday";
+// }
+
+
+
+// int main()
+// {
+//     fun3(3);
+//     fun2(2);
+//     fun1(1);
+//     fun0(0);
+// }
+//this is thw simplest way to solve this by normal method and function caLLing
+
+
+// #include<iostream>
+// using namespace std;
+
+// void fun1(int n);
+// void fun2(int n);
+// void fun3(int n);
+// void fun3(int n)
+// {
+//     cout<<n<<" days left for birthday"<<endl;
+//     fun2(n-1);
+// }
+// void fun2(int n)
+// {
+//     cout<<n<<" days left for birthday"<<endl;
+//     fun1(n-1);
+// }
+
+// void fun1(int n)
+// {
+//     cout<<n<<" days left for birthday"<<endl;
+// }
+// int main()
+// {
+//     fun3(3);
+//     fun2(2);
+//     fun1(1);
+
+// }
+
+// this was method two of indirect calling
+
+// #include<iostream>
+// using namespace std;
+//  void fun3(int n)
+//  {
+//     cout<<n<< " days left for birthday"<<endl;
+//     fun3(n-1);
+//  }
+//  void fun2(int n)
+//  {
+//     cout<<n<< "days left for birthday"<<endl;
+//  }
+//  void fun1(int n)
+//  {
+//     cout<<n<< "day left for birthday"<<endl;
+//  }
+//  int main()
+//  {
+//     fun3(3);
+//     fun2(2);
+//     fun1(1);
+
+//  }
+//  void fun0(int n)
+//  {
+//     cout<<"happy birthday";
+//  }
+
+// apply base conditon in above code it's incomnplete    if(n==0)
+
+
+
+// #include<iostream>
+// using namespace std;
+// void fun3(int n)
+// {
+//     if(n==0)
+//     {
+//         cout<<" happy birthday"<<endl;
+//         return;
+//     }
+//     cout<<n<<" days left for birthday"<<endl;
+//     fun3(n-1);
+// }
+// int main()
+// {
+//     fun3(3);
+// }     CORRECT RECURSIVE METHOD
+
+// #include<iostream>
+// using namespace std;
+
+// void print( int n)
+// {
+//     if(n==1)
+//     {
+//         cout<<1;
+//         return;
+//     }
+//     cout<<n<<endl;
+//     print(n-1);
+// }
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     print(n);
+// }
+// above one is for reverse output
+
+// #include<iostream>
+// using namespace std;
+
+// void print( int n)
+// {
+//     if(n==1)
+//     {
+//         cout<<1;
+//         return;
+//     }
+//     print(n-1);
+//     cout<<n<<endl;
+// }
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     print(n);
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+//  void print (int num,int n)
+//  {
+//     if(num==n)
+//     {
+//         cout<<num;
+//         return;
+//     }
+//     cout<<num;
+//     print(num+1,n);
+//  }
+//  int main()
+//  {
+//     int n;
+//     cin>>n;
+//     print (1,n);
+//  }                this is not in one argument
+
+//even number code
+
+
+// #include<iostream>
+// using namespace std;
+//  void printEven(int n)
+//  {
+//     if(n==2)
+//     {
+//         cout<<n<<endl;
+//         return;
+//     }
+//     printEven(n-2);
+//     cout<<n<<endl;
+    
+//  }
+//  int main()
+//  {
+//     int n;
+//     cin>>n;
+//     if(n%2==1)
+//     n--;
+//     printEven(n);
+//  }
+
+
+
+//factorial code
+
+// #include<iostream>
+// using namespace std;
+
+// int fact(int n)   // ✅ return type is int
+// {
+//     if(n == 0 || n == 1)   // base case
+//         return 1;
+
+//     return n * fact(n-1);  // recursive case
+// }
+
+// int main()
+// {
+//     int n;
+//     cin >> n;
+
+//     if(n < 0)
+//     {
+//         cout << "factorial is not possible";
+//         return 0;
+//     }
+
+//     cout << fact(n);   // ✅ print the result
+// }
+
+
+// #include<iostream>
+// using namespace std;
+//  int sum(int n)
+//  {
+//     if(n == 0)
+//         return 0;
+//     return n + sum(n-1);
+//  }
+//  int main()
+//  {
+//     int n;
+//     cin>>n;
+//     cout<<sum(n)<<endl;
+//  }
+
+// #include<iostream>
+// using namespace std;
+// int power(int n)
+// {
+//     if(n==0)
+//     return 1;
+//     return 2*power(n-1);
+// }
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     cout<<power(n);
+// }
+
+//FIBONACCI SERIES
+
