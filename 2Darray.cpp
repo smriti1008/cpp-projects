@@ -1,31 +1,40 @@
 // #include<iostream>
+// #include<vector>
+// #include<algorithm>
 // using namespace std;
 // int main()
-// {
-//     int arr[4][3]={1,2,3,4,5,6,7,8,9,10,11,12};
-//     int x;
-//     cout<<"Enter x: ";
-//     cin>>x;
-//     for(int i=0;i<4;i++)
+// {   
+//     int n,m;
+//     cout<<"Enter rows and columns: ";
+//     cin>>n>>m;
+
+//     vector<vector<int>> matrix(3,vector<int>(4,1));
+//     // for(int i=0;i<3;i++)
+//     // for(int j=0;j<4;j++)
+//     // cout<<matrix[i][j]<<" ";
+
+//     // cout<<"Rows= "<<matrix.size();
+//     // cout<<endl;
+//     // cout<<"columns= "<<matrix[0].size();
+
+//     for(int i=0;i<n;i++)
+//     for(int j=0;j<n;j++)
+//     cin>>matrix[n][m];
+
+//     for(int i=0;i<n;i++)
 //     {
-//         for(int j=0;j<3;j++)
-//         {
-//             if(arr[i][j]==x)
-//             {
-//                 cout<<"yes";
-//                 return0;
-//             }
-//         }
-//     }
-//     cout<<"no";
-// }
+//         for(int j=0;j<n;j++) 
+//         cout<<matrix[n][m]<<" ";
+//         cout<<endl;
+//     }    
+//  }
 
 
 
 //add 2 matrix
 
 
-// #inclue<iostream>
+// #include<iostream>
 // using namespace std;
 // int main()
 // {
@@ -35,40 +44,17 @@
 //     for(int i=0;i<3;i++)
 //     {
 //         for(int j=0;j<4;j++)
-//         ans[3][4]=arr1[3][4]+arr2[3][4];
+//         ans[i][j]=arr1[i][j]+arr2[i][j];
 //     }
 
 //     for(int i=0;i<3;i++)
 //     {
 //         for(int j=0;j<4;j++)
-//         cout<<ans[3][4]<<" ";
+//         cout<<ans[i][j]<<" ";
 //     }
+//     return 0;
 // }
 
-
-
-//print row index with max sum
-
-// #include<iostream>
-// #include<climits>
-// using namespace std;
-// int arr1[3][4]={1,2,3,4,5,6,7,8,9,10,11,12};
-// void print rowmax(int arr[][4],int row,int col)
-// {
-//     int index=-1,sum=INT_MIN;
-//     for (int i=0;i<row;i++)
-//     {
-//         int total=0;
-//         for(int j=0;j<col;j++)
-//         total+=arr[i][j];
-//             if (total>sum)
-//             {
-//                 sum=total;
-//                 index=i
-//             }   
-//     }
-//     cout<index<<" ";
-// } 
 
 
 //point sum of diagonal element
@@ -117,8 +103,6 @@
 //       }  
 //     }
     
-    
-// }
 
 
 //wave form
@@ -151,22 +135,23 @@
 
 
 
+
 //spiral form
 //transpose of a matrix
 
 //rotate matrix by 90 deg
 
 
-#include<iostream>
-using namespace std;
-int main()
-{
-    int arr[]={1,2,3,4,5,6,7,8,9,10,11,12};
-    for(int i=0;i<row-1;i++)
-    {
-        for(int j=j+1;j<column;j++)
-        {
-            swap(arr[i][j],arr[j][i]);
-        }
-    }
-}
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[]={1,2,3,4,5,6,7,8,9,10,11,12};
+//     for(int i=0;i<row-1;i++)
+//     {
+//         for(int j=j+1;j<column;j++)
+//         {
+//             swap(arr[i][j],arr[j][i]);
+//         }
+//     }
+// }
